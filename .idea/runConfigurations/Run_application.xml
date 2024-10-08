@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run application" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="ch.heigvd.dai.Main" />
+    <module name="java-ios" />
+    <option name="PROGRAM_PARAMETERS" value="-i TEXT ./TestFileText.txt write -s 1024" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
