@@ -1,0 +1,15 @@
+services:
+  writer:
+    image: ghcr.io/lentidas/heig-vd-dai-course-java-and-docker:latest
+    volumes:
+      - .:/data
+    command: --implementation BUFFERED_BINARY /data/100-bytes.bin write --size 100
+
+  reader:
+    image: ghcr.io/lentidas/heig-vd-dai-course-java-and-docker:latest
+    volumes:
+      - .:/data
+    command: --implementation BUFFERED_BINARY /data/100-bytes.bin read
+
+volumes:
+  data:
